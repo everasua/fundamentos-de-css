@@ -2,115 +2,145 @@
 <html>
 
 <head>
-  <title>Curso Básico HTML5</title>
+  <title>Curso Básico <strong>HTML5</strong></title>
   <meta charset="UTF-8">
   <script src="file.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <h1>Hola Mundo</h1>
-  <header>
-    <nav>
-      <h2 class="hidden">Navegación</h2>
-      <ul>
-        <li><a href="#">Menu Item 1</a></li>
-        <li><a href="#">Menu Item 2</a></li>
-        <li><a href="#">Menu Item 3</a></li>
-      </ul>
-    </nav>
+<body class="body">
+  
+  <header class="header">
+    <section class="wrapper">
+      <h1 class="title">Hola Mundo</h1>
+      <nav>
+        <ul class="menu">
+          <li class="menu-item"><a class="link" href="#">Menu Item 1</a></li>
+          <li class="menu-item"><a class="link" href="#">Menu Item 2</a></li>
+          <li class="menu-item"><a class="link" href="#">Menu Item 3</a></li>
+        </ul>
+      </nav>
+    </section>
   </header>
-  <section>
-    <h2>Mi Noticia</h2>
-    <p>The latest stable release of HTML, HTML5 takes HTML from a simple markup for structuring a document to a full app
-      development platform. Among other features, HTML5 includes new elements and JavaScript APIs to enhance storage,
-      multimedia, and hardware access.</p>
-    <p>Quick-reference HTML5 sheet containing markup generators, code examples and web developer tools. The guide is
-      downloadable for ease of use and access. This page was created with help from the W3C as a quick guide for those
-      who have some basic familiarity and experience using HTML5.</p>
-    <figure>
-      <img src="images/everis.png">
-    </figure>
-  </section>
-  <section>
-    <h2>Mi Formulario</h2>
-    <form>
-      <fieldset>
-        <legend>Datos personales</legend>
-        <label>Nombre</label>
-        <input type="text">
-        <label>Apellidos</label>
-        <input type="text">
-        <label>Telefono</label>
-        <input type="text">
-        <input hidden type="text">
-        <input type="radio" id="dni" name="document">
-        <label for="dni">DNI</label>
-        <input type="radio" id="nie" name="document">
-        <label for="nie">NIE</label>
-        <label>Nº Documento</label>
-        <input type="text">
-      </fieldset>
+  <section class="wrapper">
+    <section class="generic-box news">
+      <section>
+        <h2 class="title">Mi Noticia</h2>
+        <p class="description">The latest stable release of HTML, <strong>HTML5</strong> takes HTML from a simple markup for structuring a document to a full app
+          development platform. Among other features, <strong>HTML5</strong> includes new elements and JavaScript APIs to enhance storage,
+          multimedia, and hardware access.</p>
+        <p class="description">Quick-reference <strong>HTML5</strong> sheet containing markup generators, code examples and web developer tools. The guide is
+          downloadable for ease of use and access. This page was created with help from the W3C as a quick guide for those
+          who have some basic familiarity and experience using <strong>HTML5</strong>.</p>
+      </section>
+      <figure class="publicity">
+        <img class="publicityee" src="images/everis.png">
+      </figure>
+    </section>
+    <section class="generic-box">
+      <h2 class=form-title>Mi Formulario</h2>
+      <form class="form">
+        <fieldset class="fieldset">
+          <legend class="legend">Datos personales</legend>
+          <div class="personal-data">
+            <div class="input-text">
+              <label class="label">Nombre</label>
+              <input class="input" type="text">
+            </div>
+            <div class="input-text">
+              <label class="label">Apellidos</label>
+              <input class="input" type="text">
+            </div>
+            <div class="input-text">
+              <label class="label">Telefono</label>
+              <input class="input" type="text">
+            </div>
+            <div class="input-radio">
+              <input type="radio" id="dni" name="document">
+              <label for="dni">DNI</label>
+              <input type="radio" id="nie" name="document">
+              <label for="nie">NIE</label>
+            </div>
+            <div class="input-text">
+              <label class="label">Nº Documento</label>
+              <input class="input" type="text">
+            </div>
+          </div>
 
-      <fieldset>
-        <legend>Otros datos</legend>
-        <label>Número de hermanos/as</label>
-        <input type="text">
-        <label>Deportes favoritos:</label>
-        <ol>
-          <li> 
-            <input type="checkbox" id="futbol" name="sports">
-            <label for="horns">Fútbol</label>
-          </li>
-          <li> 
-            <input type="checkbox" id="basketball" name="sports">
-            <label for="horns">Baloncesto</label>
-          </li>
-          <li> 
-            <input type="checkbox" id="rugby" name="sports">
-            <label for="horns">Rugby</label>
-          </li>
-          <li> 
-            <input type="checkbox" id="padel" name="sports">
-            <label for="horns">Padel</label>
-          </li>
-          <li> 
-            <input type="checkbox" id="pelota" name="sports">
-            <label for="horns">Pelota vasca</label></li>
-        </ol>
-      </fieldset>
-      <input type="reset" value="Reset Form">
-      <input type="submit" value="Enviar">
-    </form>
-    <table>
-      <caption>Título de nuestra Tabla Molona</caption>
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Apellidos</th>
-          <th>Teléfono</th>
-          <th>DNI/NIE</th>
-          <th>Deportes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Carlos</td>
-          <td>Casaluenga</td>
-          <td>987654654</td>
-          <td>123456789-A</td>
-          <td>Futbol, Padel</td>
-        </tr>
-        <tr>
-          <td>Jesús</td>
-          <td>Cardenas</td>
-          <td>987654654</td>
-          <td>123456789-A</td>
-          <td>Rugby, Pelota vasca</td>
-        </tr>
-      </tbody>
-    </table>
+        </fieldset>
+  
+        <fieldset class="fieldset">
+          <legend class="legend">Otros datos</legend>
+          <div class="other-data">
+            <div class="input-text">
+              <label class="label">Número de hermanos/as</label>
+              <input class="input" type="text">
+            </div>
+            <div class="input-checkbox">
+              <label class="label">Deportes favoritos:</label>
+              <ol class="list-ordered">
+                <li> 
+                  <label for="horns">Fútbol</label>
+                  <input class="checkbox" type="checkbox" id="futbol" name="sports">
+                </li>
+                <li> 
+                  <label for="horns">Baloncesto</label>
+                  <input class="checkbox" type="checkbox" id="basketball" name="sports">
+                </li>
+                <li> 
+                  <label for="horns">Rugby</label>
+                  <input class="checkbox" type="checkbox" id="rugby" name="sports">
+                </li>
+                <li> 
+                  <label for="horns">Padel</label>
+                  <input class="checkbox" type="checkbox" id="padel" name="sports">
+                </li>
+                <li> 
+                  <label for="horns">Pelota vasca</label>
+                  <input class="checkbox" type="checkbox" id="pelota" name="sports">
+                </li>
+              </ol>
+            </div>
+          </div>
+
+        </fieldset>
+        <input class="reset" type="reset" value="Reset Form">
+        <input class="submit" type="submit" value="Enviar">
+      </form>
+      
+    </section>
+    <section class="generic-box">
+      <table class="table">
+        <caption><h2 class="table-title">Título de nuestra Tabla Molona</h2></caption>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Teléfono</th>
+            <th>DNI/NIE</th>
+            <th>Deportes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carlos</td>
+            <td>Casaluenga</td>
+            <td>987654654</td>
+            <td>123456789-A</td>
+            <td>Futbol, Padel</td>
+          </tr>
+          <tr>
+            <td>Jesús</td>
+            <td>Cardenas</td>
+            <td>987654654</td>
+            <td>123456789-A</td>
+            <td>Rugby, Pelota vasca</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </section>
+  
 </body>
 
 </html>
